@@ -1,7 +1,54 @@
 * {
   box-sizing: border-box;
+  outline: 0;
 }
 
 html {
   font-size: 10px;
+}
+
+body {
+  background-color: #ff4d4d;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 1.15;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.content {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: left;
+  font-family: 'Merriweather', serif;
+  border-bottom: 0.2rem solid white;
+  padding-bottom: 0.4rem;
+}
+
+.links {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  border: 0;
+  display: inline-block;
+  padding: 0;
+  padding-left: 1.5rem;
+  color: white;
+}
+
+a:hover {
+  color: #efefef;
 }
