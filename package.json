@@ -1,0 +1,20 @@
+{
+  "name": "albenesi.us",
+  "version": "1.0.0",
+  "description": "Personal website for Frank Albenesius.",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:frankalbenesius/albenesi.us.git",
+    "type": "git"
+  },
+  "author": "Frank Albenesius <frankalbenesius@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^1.2.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
