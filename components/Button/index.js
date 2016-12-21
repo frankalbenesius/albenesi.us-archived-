@@ -6,7 +6,7 @@ const styles = style({
   border: '2px solid white',
   borderRadius: '4px',
   background: 'none',
-  fontSize: '50%',
+  fontSize: 'calc(16px + 4vw)',
   padding: '0.1rem 0.8rem',
   display: 'block',
   margin: '1rem auto 3rem',

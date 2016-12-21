@@ -2,7 +2,7 @@ import React from 'react'
 import { style } from 'next/css'
 
 const styles = style({
-  fontSize: '70%',
+  fontSize: 'calc(16px + 4vw)',
   display: 'block',
 })
 

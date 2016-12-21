@@ -7,7 +7,7 @@ const neatures = [
   {
     firstText: 'He made a podcast called',
     link: {
-      href: 'http://www.google.com',
+      href: 'https://itunes.apple.com/us/podcast/thats-pretty-neat/id997578046?mt=2',
       text: 'That\'s Pretty Neat',
     },
     secondText: 'with his neat pals.',
