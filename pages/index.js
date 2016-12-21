@@ -3,10 +3,11 @@ import Head from 'next/head'
 import 'glamor/reset'
 import css from 'next/css'
 import { selectNeature } from '../utils/neatures'
-import Button from '../components/Button'
+import Background from '../components/Background'
 import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
-import Background from '../components/Background'
+import Button from '../components/Button'
+import Neature from '../components/Neature'
 
 const getRandomHue = () => Math.floor(Math.random() * 360)
 class Index extends React.Component {
@@ -42,7 +43,7 @@ class Index extends React.Component {
         <Header>Frank Albenesius</Header>
         <SubHeader>is a super neat guy</SubHeader>
         <Button onClick={this.handleClick}>how neat?</Button>
-        <SubHeader>{this.state.neature.text}</SubHeader>
+        <Neature {...this.state.neature} />
       </Background>
     )
   }

@@ -1,17 +1,23 @@
 const neatures = [
   {
-    text: 'he is neater than whiskey off the rocks',
+    firstText: 'He is neater than',
+    secondText: 'whiskey off the rocks.',
     image: 'whiskey.jpg',
   },
   {
-    text: 'he made a podcast called That\'s Pretty Neat with his neat pals',
+    firstText: 'He made a podcast called',
+    link: {
+      href: 'http://www.google.com',
+      text: 'That\'s Pretty Neat',
+    },
+    secondText: 'with his neat pals.',
     image: 'podcast.jpg',
   },
 ]
 
 export const selectNeature = (skip) => {
   const randomIndex = Math.floor(Math.random() * (neatures.length));
-  if (skip && neatures[randomIndex].text === skip.text) {
+  if (skip && JSON.stringify(neatures[randomIndex]) === JSON.stringify(skip)) {
     if (randomIndex === (neatures.length - 1)) {
       return neatures[0] // back to first neature!
     }

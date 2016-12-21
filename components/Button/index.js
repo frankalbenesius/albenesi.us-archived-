@@ -8,7 +8,8 @@ const styles = style({
   background: 'none',
   fontSize: '50%',
   padding: '0.1rem 0.8rem',
-  display: 'inline-block',
+  display: 'block',
+  margin: '1rem auto 3rem',
 })
 
 export default (props) => (
