@@ -8,23 +8,31 @@ import Header from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import Background from '../components/Background'
 
+const getRandomHue = () => Math.floor(Math.random() * 360)
 class Index extends React.Component {
   static getInitialProps () {
-    return { neature: selectNeature() }
+    return {
+      neature: selectNeature(),
+      hue: getRandomHue(),
+    }
   }
   constructor(props) {
     super(props)
-    this.state = { neature: props.neature }
+    this.state = {
+      neature: props.neature,
+      hue: props.hue,
+    }
     this.handleClick = this.handleClick.bind(this)
   }
   handleClick() {
     this.setState({
-      neature: selectNeature(this.state.neature)
+      neature: selectNeature(this.state.neature),
+      hue: getRandomHue(),
     })
   }
   render() {
     return (
-      <Background image={this.state.neature.image}>
+      <Background image={this.state.neature.image} hue={this.state.hue}>
         <Head>
           <title>FRANK ALBENESIUS</title>
           <meta name="description" content="gosh DARN IT he's no neat..." />

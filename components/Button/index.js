@@ -7,7 +7,7 @@ const styles = style({
   borderRadius: '4px',
   background: 'none',
   fontSize: '50%',
-  padding: '0 0.6rem',
+  padding: '0.1rem 0.8rem',
   display: 'inline-block',
 })
 
